@@ -26,9 +26,13 @@ $scale_y-white-top: $scale_y-red-top - 0.3;
 $scale_x-white-bottom: 0.5;
 $scale_y-white-bottom: 0.5;
 
+// Colors
+$blue: #22377D;
+$red: #D9534F;
+
 /*-------- MIXIN --------*/
 
-@mixin base-triangle($color){
+@mixin base-triangle($color: #FFF){
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -37,7 +41,7 @@ $scale_y-white-bottom: 0.5;
 	border-right: none;
 }
 
-@mixin little-triangle($color){
+@mixin little-triangle($color: #FFF){
 	position: absolute;
 	top: $left_pos-red-bottom;
 	border: $height-red-bottom solid transparent;
@@ -62,32 +66,32 @@ $scale_y-white-bottom: 0.5;
 	width: $size-content - ($border-circle-height * 2);
 	height: $size-content - ($border-circle-height * 2);
 	@include border-radius($size-content);
-	border: $border-circle-height solid #22377D;
+	border: $border-circle-height solid $blue;
 }
 
 .triangle-white-first{
-	@include base-triangle(#FFF);
+	@include base-triangle;
 }
 
 .triangle-red-top{
-	@include base-triangle(#D9534F);
+	@include base-triangle($red);
 	@include scale($scale_x-red-top, $scale_y-red-top);
 }
 
 .triangle-white-top{
-	@include base-triangle(#FFF);
+	@include base-triangle;
 	left: -15px * $scale;
 	@include scale($scale_x-white-top, $scale_y-white-top);
 }
 
 .triangle-red-bottom{
+	@include little-triangle($red);
 	left: -23px * $scale;
-	@include little-triangle(#D9534F);
 }
 
 .triangle-white-bottom{
+	@include little-triangle;
 	left: -1px * $scale;
-	@include little-triangle(#FFF);
 	@include scale($scale_x-white-bottom, $scale_y-white-bottom);
 }
 

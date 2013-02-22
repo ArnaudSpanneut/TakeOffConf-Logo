@@ -4,7 +4,7 @@
 /*------ VARIABLES ------*/
 /*-------- MIXIN --------*/
 /*--------- CSS ---------*/
-/* line 50, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .center-content {
   position: absolute;
   top: 50%;
@@ -20,7 +20,7 @@
   transform: rotate(-45deg);
 }
 
-/* line 61, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .circle-blue {
   width: 144px;
   height: 144px;
@@ -32,7 +32,7 @@
   border: 28px solid #22377d;
 }
 
-/* line 68, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 .triangle-white-first {
   position: absolute;
   left: 0;
@@ -42,7 +42,7 @@
   border-right: none;
 }
 
-/* line 72, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .triangle-red-top {
   position: absolute;
   left: 0;
@@ -57,7 +57,7 @@
   transform: scale(0.75, 0.63);
 }
 
-/* line 77, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 .triangle-white-top {
   position: absolute;
   left: 0;
@@ -73,24 +73,24 @@
   transform: scale(0.4, 0.33);
 }
 
-/* line 83, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .triangle-red-bottom {
-  left: -23px;
   position: absolute;
   top: 65px;
   border: 35px solid transparent;
   border-right: 60px solid #d9534f;
   border-left: none;
+  left: -23px;
 }
 
-/* line 88, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .triangle-white-bottom {
-  left: -1px;
   position: absolute;
   top: 65px;
   border: 35px solid transparent;
   border-right: 60px solid white;
   border-left: none;
+  left: -1px;
   -webkit-transform: scale(0.5, 0.5);
   -moz-transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
