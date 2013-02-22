@@ -50,11 +50,11 @@
   border: 100px solid transparent;
   border-left: 190px solid #d9534f;
   border-right: none;
-  -webkit-transform: scale(0.8, 0.65);
-  -moz-transform: scale(0.8, 0.65);
-  -ms-transform: scale(0.8, 0.65);
-  -o-transform: scale(0.8, 0.65);
-  transform: scale(0.8, 0.65);
+  -webkit-transform: scale(0.75, 0.63);
+  -moz-transform: scale(0.75, 0.63);
+  -ms-transform: scale(0.75, 0.63);
+  -o-transform: scale(0.75, 0.63);
+  transform: scale(0.75, 0.63);
 }
 
 /* line 77, ../sass/main.scss */
@@ -66,11 +66,11 @@
   border-left: 190px solid white;
   border-right: none;
   left: -15px;
-  -webkit-transform: scale(0.45, 0.35);
-  -moz-transform: scale(0.45, 0.35);
-  -ms-transform: scale(0.45, 0.35);
-  -o-transform: scale(0.45, 0.35);
-  transform: scale(0.45, 0.35);
+  -webkit-transform: scale(0.4, 0.33);
+  -moz-transform: scale(0.4, 0.33);
+  -ms-transform: scale(0.4, 0.33);
+  -o-transform: scale(0.4, 0.33);
+  transform: scale(0.4, 0.33);
 }
 
 /* line 83, ../sass/main.scss */
@@ -85,15 +85,15 @@
 
 /* line 88, ../sass/main.scss */
 .triangle-white-bottom {
-  left: -5px;
+  left: -1px;
   position: absolute;
   top: 65px;
   border: 35px solid transparent;
   border-right: 60px solid white;
   border-left: none;
-  -webkit-transform: scale(0.45, 0.45);
-  -moz-transform: scale(0.45, 0.45);
-  -ms-transform: scale(0.45, 0.45);
-  -o-transform: scale(0.45, 0.45);
-  transform: scale(0.45, 0.45);
+  -webkit-transform: scale(0.5, 0.5);
+  -moz-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
 }
