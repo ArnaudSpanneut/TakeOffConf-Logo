@@ -1,0 +1,93 @@
+@import "compass/css3";
+
+/* ------------------------------------
+ Change scale to modify the logo size 
+--------------------------------------*/
+$scale: 1;
+
+
+/*------ VARIABLES ------*/
+// Size
+$size-content: 200px * $scale;
+$size-content-half: ($size-content / 2);
+$border-circle-height: 28px * $scale;
+
+$height-red-bottom: 35px * $scale;
+$width-red-bottom: 60px * $scale;
+$left_pos-red-bottom: ($size-content / 2 ) - $height-red-bottom;
+
+// Scale values
+$scale_x-red-top: 0.8;
+$scale_y-red-top: 0.65;
+
+$scale_x-white-top: $scale_x-red-top - 0.35;
+$scale_y-white-top: $scale_y-red-top - 0.3;
+
+$scale_x-white-bottom: 0.45;
+$scale_y-white-bottom: 0.45;
+
+/*-------- MIXIN --------*/
+
+@mixin base-triangle($color){
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: $size-content-half solid transparent;
+	border-left: ($size-content - 10px ) solid $color;
+	border-right: none;
+}
+
+@mixin little-triangle($color){
+	position: absolute;
+	top: $left_pos-red-bottom;
+	border: $height-red-bottom solid transparent;
+	border-right: $width-red-bottom solid $color;
+	border-left: none;
+}
+
+
+/*--------- CSS ---------*/
+.center-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: $size-content;
+	height: $size-content;
+	margin-left: - $size-content-half;
+	margin-top: - $size-content-half;
+	@include rotate(-45deg);
+}
+
+.circle-blue{
+	width: $size-content - ($border-circle-height * 2);
+	height: $size-content - ($border-circle-height * 2);
+	@include border-radius($size-content);
+	border: $border-circle-height solid #22377D;
+}
+
+.triangle-white-first{
+	@include base-triangle(#FFF);
+}
+
+.triangle-red-top{
+	@include base-triangle(#D9534F);
+	@include scale($scale_x-red-top, $scale_y-red-top);
+}
+
+.triangle-white-top{
+	@include base-triangle(#FFF);
+	left: -15px * $scale;
+	@include scale($scale_x-white-top, $scale_y-white-top);
+}
+
+.triangle-red-bottom{
+	left: -23px * $scale;
+	@include little-triangle(#D9534F);
+}
+
+.triangle-white-bottom{
+	left: -5px * $scale;
+	@include little-triangle(#FFF);
+	@include scale($scale_x-white-bottom, $scale_y-white-bottom);
+}
+

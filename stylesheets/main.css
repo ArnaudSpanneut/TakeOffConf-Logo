@@ -1,0 +1,99 @@
+/* ------------------------------------
+ Change scale to modify the logo size 
+--------------------------------------*/
+/*------ VARIABLES ------*/
+/*-------- MIXIN --------*/
+/*--------- CSS ---------*/
+/* line 50, ../sass/main.scss */
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  margin-top: -100px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 61, ../sass/main.scss */
+.circle-blue {
+  width: 144px;
+  height: 144px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+  border: 28px solid #22377d;
+}
+
+/* line 68, ../sass/main.scss */
+.triangle-white-first {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 100px solid transparent;
+  border-left: 190px solid white;
+  border-right: none;
+}
+
+/* line 72, ../sass/main.scss */
+.triangle-red-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 100px solid transparent;
+  border-left: 190px solid #d9534f;
+  border-right: none;
+  -webkit-transform: scale(0.8, 0.65);
+  -moz-transform: scale(0.8, 0.65);
+  -ms-transform: scale(0.8, 0.65);
+  -o-transform: scale(0.8, 0.65);
+  transform: scale(0.8, 0.65);
+}
+
+/* line 77, ../sass/main.scss */
+.triangle-white-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 100px solid transparent;
+  border-left: 190px solid white;
+  border-right: none;
+  left: -15px;
+  -webkit-transform: scale(0.45, 0.35);
+  -moz-transform: scale(0.45, 0.35);
+  -ms-transform: scale(0.45, 0.35);
+  -o-transform: scale(0.45, 0.35);
+  transform: scale(0.45, 0.35);
+}
+
+/* line 83, ../sass/main.scss */
+.triangle-red-bottom {
+  left: -23px;
+  position: absolute;
+  top: 65px;
+  border: 35px solid transparent;
+  border-right: 60px solid #d9534f;
+  border-left: none;
+}
+
+/* line 88, ../sass/main.scss */
+.triangle-white-bottom {
+  left: -5px;
+  position: absolute;
+  top: 65px;
+  border: 35px solid transparent;
+  border-right: 60px solid white;
+  border-left: none;
+  -webkit-transform: scale(0.45, 0.45);
+  -moz-transform: scale(0.45, 0.45);
+  -ms-transform: scale(0.45, 0.45);
+  -o-transform: scale(0.45, 0.45);
+  transform: scale(0.45, 0.45);
+}
